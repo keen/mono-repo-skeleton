@@ -1,0 +1,26 @@
+{
+  "name": "@keen.io/test-1",
+  "version": "0.0.0",
+  "description": "Test 1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "typings/index.d.ts",
+  "module": "dist/index.js",
+  "directories": {
+    "lib": "dist"
+  },
+  "files": [
+    "dist",
+    "typings"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "react": "^18.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "73fc4cfb2c5ebcc7bea7411d361f805b475e9324"
+}
