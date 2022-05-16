@@ -49,6 +49,7 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
+    "test:ci": "jest --maxWorkers=2 --coverage",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "turbo run build",
