@@ -29,8 +29,11 @@ jobs:
           name: Build packages
           command: npx lerna run build --concurrency 2
       - run:
+          name: Assume packages.json in packages unchanged
+          command: git update-index --assume-unchanged packages/*/package.json
+      - run:
           name: Bump version of changed packages
-          command: npx lerna version --conventional-commits --no-push --yes
+          command: npx lerna version --conventional-commits --no-push --yes --force-git-tag
       - run:
           name: Publish
           command: npx lerna publish from-git --yes --no-verify-access
