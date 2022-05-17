@@ -6,6 +6,7 @@ node_modules
 .DS_Store
 coverage
 build-storybook.log
+.npmrc
 
 # Build
 dist
