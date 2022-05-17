@@ -30,7 +30,10 @@ jobs:
           command: npx lerna run build --concurrency 2
       - run:
           name: Bump version of changed packages
-          command: npx lerna version --conventional-commits --no-push --yes --no-verify-registry
+          command: npx lerna version --conventional-commits --no-push --yes
+      - run:
+          name: Assume packages.json in packages unchanged
+          command: git update-index --assume-unchanged packages/*/package.json
       - run:
           name: Publish
           command: npx lerna publish from-git --yes --no-verify-access
