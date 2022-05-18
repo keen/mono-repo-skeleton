@@ -20,7 +20,7 @@
     "react": "^18.1.0"
   },
   "publishConfig": {
-    "access": "ds sdf sdf"
+    "access": "public"
   },
   "gitHead": "73fc4cfb2c5ebcc7bea7411d361f805b475e9324"
 }
