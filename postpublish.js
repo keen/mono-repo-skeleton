@@ -12,7 +12,7 @@ packageNames.map(packageName => {
   fs.writeFile(packageLocation, JSON.stringify(packageData, null, 2), function (err) {
     if (err) throw err;
   });
-  fs.appendFile(packageLocation, "\n",function (err) {
+  fs.appendFile(packageLocation, '\n',function (err) {
     if (err) throw err;
   })
 })

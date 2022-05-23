@@ -55,7 +55,6 @@
     "build": "turbo run build",
     "prepublish": "node ./prepublish.js",
     "create-version": "lerna version --conventional-commits",
-    "postpublish": "node ./postpublish.js",
     "lint": "eslint --quiet --ext .ts --ext .tsx packages/",
     "prettier": "prettier --write 'packages/**/*.{js,ts,tsx,json}'",
     "madge": "madge --circular packages/**/* --extensions js,ts,tsx,json --exclude typings --debug"
