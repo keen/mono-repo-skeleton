@@ -54,7 +54,7 @@
     "build-storybook": "build-storybook",
     "build": "turbo run build",
     "create-version": "lerna version --conventional-commits",
-    "prepublish": "node ./prepublish.js",
+    "postpublish": "node ./prepublish.js",
     "lint": "eslint --quiet --ext .ts --ext .tsx packages/",
     "prettier": "prettier --write 'packages/**/*.{js,ts,tsx,json}'",
     "madge": "madge --circular packages/**/* --extensions js,ts,tsx,json --exclude typings --debug"
